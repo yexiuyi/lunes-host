@@ -89,7 +89,7 @@ async function main() {
     await passInput.fill(password);
 
     const loginBtn = page.locator('button[type="submit"]');
-    await loginBtn.waitFor({ state: 'visible', timeout: 15_000 });
+    await loginBtn.waitFor({ state: 'visible', timeout: 30_000 });
 
     const spBefore = screenshot('02-before-submit');
     await page.screenshot({ path: spBefore, fullPage: true });
